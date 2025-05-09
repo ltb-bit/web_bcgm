@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《本草纲目》介绍</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="container mx-auto px-4">
+            <h1>《本草纲目》-- 李时珍</h1>
+            <ul>
+                <li><a href="#overview">概述</a></li>
+                <li><a href="#author">作者</a></li>
+                <li><a href="#content">内容</a></li>
+                <li><a href="#impact">影响</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 英雄部分 -->
+    <section class="text-center" id="overview">
+        <div class="container mx-auto">
+            <h1>《本草纲目》 - 东方医药巨典</h1>
+            <p class="text-lg mb-8">《本草纲目》是一部具有深远影响的医药学著作，承载着中国古代医药智慧。</p>
+            <button><a href="./index1.html">了解更多</a></button>
+            <div class="slider">
+                <div class="slides">
+                    <img src="images/bcgm.jpg" alt="幻灯片1">
+                    <img src="images/bcgm1.jpg" alt="幻灯片2">
+                    <img src="images/bcgm2.jpg" alt="幻灯片3">
+                </div>
+                <button class="prev" onclick="prevSlide('overview')"><i class="fas fa-chevron-left"></i></button>
+                <button class="next" onclick="nextSlide('overview')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- 作者部分 -->
+    <section id="author">
+        <div class="container mx-auto">
+            <h2>作者 - 李时珍</h2>
+            <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
+                <img src="images/LSZ.jpg" alt="李时珍画像">
+                <div>
+                    <p>李时珍，明代杰出医药学家。他出生于医药世家，自幼对医药学充满兴趣。为纠正古代本草书籍中的错误和补充新的药物知识，他历经近三十年，踏遍千山万水，参考众多典籍，亲自实践验证，最终完成了《本草纲目》这部伟大著作。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 内容部分 -->
+    <section id="content">
+        <div class="container mx-auto">
+            <h2>内容介绍</h2>
+            <p>《本草纲目》全书共 52 卷，约 190 万字，记载药物 1892 种，其中新增药物 374 种。它采用了先进的分类方法，将药物分为 16 部 60 类，涵盖草部、谷部、菜部、果部、木部等。书中不仅详细描述了药物的形态、产地、性味、功效等，还附有大量的药方和药物插图，为后人研究和应用药物提供了重要依据。</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+                <div>
+                    <h3>药物分类</h3>
+                    <p>《本草纲目》的药物分类方法具有创新性和系统性，为后世药物学分类奠定了基础。</p>
+                </div>
+                <div>
+                    <h3>药方收录</h3>
+                    <p>书中收录了 11096 个药方，涉及内、外、妇、儿等多个领域，许多药方至今仍在临床应用。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 影响部分 -->
+    <section id="impact">
+        <div class="container mx-auto">
+            <h2>历史影响</h2>
+            <p>《本草纲目》对中国和世界医药学、植物学等领域产生了深远影响。它是中国古代医药学的集大成之作，对后世医药学的发展起到了重要的推动作用。同时，该书被翻译成多种语言，传播到世界各地，为世界医药学的发展做出了贡献。达尔文称它为“中国古代的百科全书”。</p>
+            <div class="slider">
+                <div class="slides">
+                    <img src="images/bcgm3.jpg" alt="幻灯片4">
+                    <img src="images/bcgn4.jpg" alt="幻灯片5">
+                    <img src="images/bcgm5.jpg" alt="幻灯片6">
+                </div>
+                <button class="prev" onclick="prevSlide('impact')"><i class="fas fa-chevron-left"></i></button>
+                <button class="next" onclick="nextSlide('impact')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy;《本草纲目》相关介绍</p>
+        <p>本作品使用的地图资源：引入 Echarts 库和中国地图数据的 JavaScript 文件。</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
